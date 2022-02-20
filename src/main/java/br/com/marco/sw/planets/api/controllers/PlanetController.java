@@ -31,7 +31,7 @@ import io.swagger.annotations.ApiResponses;
 @RestController
 @RequestMapping("/api/planets")
 public class PlanetController {
-	//teste2
+	//teste3
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 
 	@Autowired
