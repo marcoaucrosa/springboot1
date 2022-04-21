@@ -49,7 +49,7 @@ public class PlanetController {
 		return ResponseEntity.ok().body(planetList);
 	}
 	
-	@ApiOperation(value="Retorna planeta por id")
+	@ApiOperation(value="Busca planeta por id")
 	@GetMapping("/{id}")
 	public ResponseEntity<Planet> findById(@PathVariable("id") String id) {
 		logger.info("Buscando Planeta com ID: " + id);
