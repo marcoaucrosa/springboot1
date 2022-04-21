@@ -37,7 +37,7 @@ public class PlanetController {
 	@Autowired
 	private PlanetService service;
 	
-	@ApiOperation(value="Retorna todos os planetas")
+	@ApiOperation(value="Lista todos os planetas")
 	@GetMapping("/")
 	public ResponseEntity<List<Planet>> findAll(@RequestParam(name = "name", required = false) String name) {
 		List<Planet> planetList = new ArrayList<Planet>();
