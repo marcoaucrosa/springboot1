@@ -77,7 +77,7 @@ public class PlanetController {
 		return ResponseEntity.noContent().build();
 	}
 	
-	@ApiOperation(value="Remove planeta")
+	@ApiOperation(value="Remove um planeta")
 	@DeleteMapping("/{id}")
 	@ApiResponses(value = {
 			@ApiResponse(code = 404, message = "Código inexistente")
