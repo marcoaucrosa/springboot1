@@ -56,7 +56,7 @@ public class PlanetController {
 		return ResponseEntity.ok().body(service.findById(id));
 	}
 	
-	@ApiOperation(value="Cadastra planeta")
+	@ApiOperation(value="Cadastra um planeta")
 	@PostMapping("/")
 	public ResponseEntity<Void> save(@Valid @RequestBody Planet planet) {
 		logger.info("Salvando Planeta: " + "[ Nome: " + planet.getName() + " Clima: " + planet.getClimate() + " Terreno: " + planet.getTerrain() + " ]");
