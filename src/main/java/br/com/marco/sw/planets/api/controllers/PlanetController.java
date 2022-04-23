@@ -65,7 +65,7 @@ public class PlanetController {
 		return ResponseEntity.created(uri).build();
 	}
 	
-	@ApiOperation(value="Altera planeta")
+	@ApiOperation(value="Altera um planeta")
 	@ApiResponses(value = {
 			@ApiResponse(code = 404, message = "Código inexistente")
 	})
